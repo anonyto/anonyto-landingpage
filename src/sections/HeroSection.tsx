@@ -56,7 +56,7 @@ export function HeroSection() {
             <div className="space-y-3">
               <div className="flex flex-col sm:flex-row gap-3 max-w-lg">
                 <a
-                  href="https://join.internships.click/36805238"
+                  href="https://join-anonyto.systeme.io/36805238"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h-16 sm:h-12 px-6 sm:px-8 bg-brand-primary-600 hover:bg-brand-primary-700 text-white text-base sm:text-sm font-medium rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-brand-primary-600/30 whitespace-nowrap flex items-center justify-center"

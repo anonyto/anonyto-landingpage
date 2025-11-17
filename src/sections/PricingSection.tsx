@@ -55,7 +55,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href="https://join.internships.click/36805238"
+              href="https://join-anonyto.systeme.io/36805238"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg border-2 border-brand-neutral-300 dark:border-brand-neutral-600 hover:bg-brand-neutral-50 dark:hover:bg-brand-neutral-700 text-brand-neutral-900 dark:text-white font-medium transition-colors text-sm sm:text-base inline-flex items-center justify-center"
@@ -121,7 +121,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href="https://join.internships.click/36805238"
+              href="https://join-anonyto.systeme.io/36805238"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg bg-white text-brand-primary-600 hover:bg-gray-100 font-medium transition-colors text-sm sm:text-base inline-flex items-center justify-center"
@@ -168,7 +168,7 @@ export function PricingSection() {
             </ul>
 
             <a
-              href="https://join.internships.click/36805238"
+              href="https://join-anonyto.systeme.io/36805238"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg bg-brand-primary-600 text-white hover:bg-brand-primary-700 font-medium transition-colors text-sm sm:text-base inline-flex items-center justify-center"

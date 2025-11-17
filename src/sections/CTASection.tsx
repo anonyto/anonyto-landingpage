@@ -17,7 +17,7 @@ export function CTASection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
           <a
-            href="https://join.internships.click/36805238"
+            href="https://join-anonyto.systeme.io/36805238"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-white text-brand-primary-600 hover:bg-gray-100 h-11 sm:h-12 px-6 sm:px-8 shadow-large group"
@@ -26,7 +26,7 @@ export function CTASection() {
             <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
-            href="https://join.internships.click/36805238"
+            href="https://join-anonyto.systeme.io/36805238"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-transparent text-white border-2 border-white hover:bg-white hover:text-brand-primary-600 h-11 sm:h-12 px-6 sm:px-8 group"
