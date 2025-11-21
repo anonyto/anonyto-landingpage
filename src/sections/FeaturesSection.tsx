@@ -14,64 +14,23 @@ export function FeaturesSection() {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
 
-  const features = [
-    {
-      icon: Briefcase,
-      title: "Entreprises adoptant l'IA",
-      description:
-        "Pour les organisations qui veulent utiliser l'IA en toute sécurité sans exposer leurs données",
-      color: "blue",
-    },
-    {
-      icon: FileText,
-      title: "Équipes juridiques",
-      description:
-        "Protégez la confidentialité client tout en bénéficiant de l'assistance IA pour la rédaction",
-      color: "orange",
-    },
-    {
-      icon: Users,
-      title: "RH & Paie",
-      description:
-        "Gérez les données sensibles des employés sans risque de fuite d'informations personnelles",
-      color: "green",
-    },
-    {
-      icon: DollarSign,
-      title: "Départements financiers",
-      description:
-        "Utilisez l'IA pour l'analyse financière sans exposer de chiffres confidentiels",
-      color: "purple",
-    },
-    {
-      icon: Target,
-      title: "Support & Service client",
-      description:
-        "Répondez plus rapidement aux clients avec l'IA tout en protégeant leurs informations",
-      color: "blue",
-    },
-    {
-      icon: Lightbulb,
-      title: "R&D & Ingénierie",
-      description:
-        "Accélérez l'innovation avec l'IA sans compromettre la propriété intellectuelle",
-      color: "orange",
-    },
-    {
-      icon: Briefcase,
-      title: "Agences gérant les données clients",
-      description:
-        "Protégez les données de vos clients tout en utilisant l'IA pour améliorer vos services",
-      color: "green",
-    },
-    {
-      icon: Shield,
-      title: "Entreprises conformes RGPD/ISO/HIPAA",
-      description:
-        "Maintenez votre conformité tout en adoptant les outils IA modernes",
-      color: "purple",
-    },
+  const icons = [
+    Briefcase,
+    FileText,
+    Users,
+    DollarSign,
+    Target,
+    Lightbulb,
+    Briefcase,
+    Shield,
   ];
+
+  const features = t.features.items.map((item, index) => ({
+    icon: icons[index],
+    title: item.title,
+    description: item.description,
+    color: ["blue", "orange", "green", "purple"][index % 4],
+  }));
 
   return (
     <section id="features" className="section-padding">

@@ -32,26 +32,12 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Détection en temps réel</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Anonymisation de base</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Extension navigateur</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Usage quotidien limité</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Support communautaire</span>
-              </li>
+              {t.pricing.starter.features.map((feature, index) => (
+                <li key={index} className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
             </ul>
 
             <a
@@ -65,7 +51,7 @@ export function PricingSection() {
           </div>
           <div className="bg-brand-primary-600 rounded-xl sm:rounded-2xl p-6 sm:p-8 border-2 border-brand-primary-600 relative transform md:scale-105 shadow-xl scroll-animate stagger-2">
             <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2 bg-brand-secondary-500 text-white px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap">
-              Plus populaire
+              {t.pricing.badge}
             </div>
 
             <div className="mb-6">
@@ -98,26 +84,12 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-              <li className="flex items-center gap-2 text-sm sm:text-base text-white">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Tout de Starter</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-white">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Anonymisation illimitée</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-white">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Modèles de détection avancés</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-white">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Règles personnalisées</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-white">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span>Support prioritaire</span>
-              </li>
+              {t.pricing.pro.features.map((feature, index) => (
+                <li key={index} className="flex items-center gap-2 text-sm sm:text-base text-white">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
             </ul>
 
             <a
@@ -145,26 +117,12 @@ export function PricingSection() {
             </div>
 
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Tout de Pro</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Tableau de bord admin</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Politiques d'équipe</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>SSO & sécurité avancée</span>
-              </li>
-              <li className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
-                <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
-                <span>Support dédié</span>
-              </li>
+              {t.pricing.enterprise.features.map((feature, index) => (
+                <li key={index} className="flex items-center gap-2 text-sm sm:text-base text-brand-neutral-700 dark:text-brand-neutral-300">
+                  <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
             </ul>
 
             <a

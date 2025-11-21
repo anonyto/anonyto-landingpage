@@ -19,91 +19,27 @@ export function ModulesSection() {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
 
-  const modules = [
-    {
-      icon: Shield,
-      name: "Anonymisation IA en temps réel",
-      description:
-        "Détection et anonymisation instantanée des données sensibles pendant que vous tapez",
-      color: "blue",
-    },
-    {
-      icon: Target,
-      name: "Détection avancée des données sensibles",
-      description:
-        "Identifie les noms, données clients, processus internes, infos financières et plus",
-      color: "orange",
-    },
-    {
-      icon: Globe,
-      name: "Fonctionne avec tous les outils IA",
-      description:
-        "Compatible avec ChatGPT, Copilot, Gemini et tout outil IA basé sur navigateur ou desktop",
-      color: "green",
-    },
-    {
-      icon: Settings,
-      name: "Extension navigateur + intégration desktop",
-      description:
-        "Installation facile en moins de 2 minutes, aucun changement de flux de travail requis",
-      color: "purple",
-    },
-    {
-      icon: Target,
-      name: "Niveaux de sensibilité personnalisables",
-      description:
-        "Contrôlez ce qui compte comme sensible selon les besoins de votre entreprise",
-      color: "blue",
-    },
-    {
-      icon: BarChart3,
-      name: "Tableau de bord admin & logs d'audit",
-      description:
-        "Suivez l'utilisation, examinez les incidents et maintenez la conformité",
-      color: "orange",
-    },
-    {
-      icon: Users,
-      name: "Politiques d'équipe & contrôle d'accès",
-      description:
-        "Définissez des règles par département, rôle ou niveau de sensibilité des données",
-      color: "green",
-    },
-    {
-      icon: Database,
-      name: "Zéro stockage de données",
-      description:
-        "Nous ne conservons jamais votre contenu, traitement local ou éphémère uniquement",
-      color: "purple",
-    },
-    {
-      icon: CheckCircle,
-      name: "Prêt pour le RGPD",
-      description:
-        "Construit avec la conformité à l'esprit pour les entreprises européennes et mondiales",
-      color: "blue",
-    },
-    {
-      icon: Lock,
-      name: "Chiffrement de bout en bout",
-      description: "Vos données restent chiffrées en transit et au repos",
-      color: "orange",
-    },
-    {
-      icon: Zap,
-      name: "Performance ultra-rapide",
-      description:
-        "L'anonymisation se fait en millisecondes, pas de ralentissement perceptible",
-      color: "green",
-    },
-    {
-      icon: Award,
-      name: "Support prioritaire",
-      description:
-        "Accès à notre équipe d'experts pour l'intégration et le support continu",
-      color: "purple",
-    },
+  const icons = [
+    Shield,
+    Target,
+    Globe,
+    Settings,
+    Target,
+    BarChart3,
+    Users,
+    Database,
+    CheckCircle,
+    Lock,
+    Zap,
+    Award,
   ];
+
+  const modules = t.modules.items.map((item, index) => ({
+    icon: icons[index],
+    name: item.name,
+    description: item.description,
+    color: ["blue", "orange", "green", "purple"][index % 4],
+  }));
 
   return (
     <section id="modules" className="section-padding relative overflow-hidden">

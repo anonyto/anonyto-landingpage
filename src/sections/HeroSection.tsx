@@ -87,7 +87,7 @@ export function HeroSection() {
                 <div className="flex items-center gap-1.5 sm:gap-2">
                   <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
-                    En ligne
+                    {t.hero.dashboard.online}
                   </span>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export function HeroSection() {
                     className="text-2xl sm:text-3xl font-semibold text-brand-neutral-900 dark:text-white mb-1"
                   />
                   <p className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
-                    Risque réduit
+                    {t.hero.dashboard.riskReduced}
                   </p>
                 </div>
                 <div className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all duration-300 group">
@@ -123,7 +123,7 @@ export function HeroSection() {
                     className="text-3xl font-semibold text-brand-neutral-900 dark:text-white mb-1"
                   />
                   <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                    Par incident évité
+                    {t.hero.dashboard.perIncident}
                   </p>
                 </div>
               </div>
@@ -131,10 +131,10 @@ export function HeroSection() {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <h4 className="text-sm font-medium text-brand-neutral-900 dark:text-white mb-1">
-                      Protection en temps réel
+                      {t.hero.dashboard.realtimeProtection}
                     </h4>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                      Taux de détection
+                      {t.hero.dashboard.detectionRate}
                     </p>
                   </div>
                   <span className="text-sm text-green-600 dark:text-green-400 font-medium flex items-center gap-1">
@@ -200,7 +200,7 @@ export function HeroSection() {
                       99.2%
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                      Précision
+                      {t.hero.dashboard.accuracy}
                     </p>
                   </div>
                   <div className="text-center group cursor-default">
@@ -212,7 +212,7 @@ export function HeroSection() {
                       />
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                      Latence
+                      {t.hero.dashboard.latency}
                     </p>
                   </div>
                   <div className="text-center group cursor-default">
@@ -220,7 +220,7 @@ export function HeroSection() {
                       24/7
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                      Actif
+                      {t.hero.dashboard.active}
                     </p>
                   </div>
                 </div>
@@ -229,19 +229,19 @@ export function HeroSection() {
                 <button className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all group hover:shadow-lg hover:-translate-y-1 duration-300">
                   <Shield className="w-5 h-5 text-brand-neutral-600 dark:text-brand-neutral-400 mx-auto mb-2 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors group-hover:scale-110" />
                   <p className="text-xs font-medium text-brand-neutral-600 dark:text-brand-neutral-400 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
-                    IA Guard
+                    {t.hero.dashboard.aiGuard}
                   </p>
                 </button>
                 <button className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all group hover:shadow-lg hover:-translate-y-1 duration-300">
                   <Eye className="w-5 h-5 text-brand-neutral-600 dark:text-brand-neutral-400 mx-auto mb-2 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors group-hover:scale-110" />
                   <p className="text-xs font-medium text-brand-neutral-600 dark:text-brand-neutral-400 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
-                    Audit
+                    {t.hero.dashboard.audit}
                   </p>
                 </button>
                 <button className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all group hover:shadow-lg hover:-translate-y-1 duration-300">
                   <Lock className="w-5 h-5 text-brand-neutral-600 dark:text-brand-neutral-400 mx-auto mb-2 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors group-hover:scale-110" />
                   <p className="text-xs font-medium text-brand-neutral-600 dark:text-brand-neutral-400 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
-                    Crypto
+                    {t.hero.dashboard.crypto}
                   </p>
                 </button>
               </div>

@@ -1,40 +1,27 @@
 import { Shield, Lock, Database, Clock, CheckCircle } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
+import { translations } from "../i18n/translations";
 
 export function SecuritySection() {
-  const features = [
-    {
-      icon: Shield,
-      title: "Protection automatique",
-      description:
-        "Vos données sont protégées automatiquement, sans effort de votre part.",
-    },
-    {
-      icon: Lock,
-      title: "Confidentialité garantie",
-      description: "Nous ne partageons jamais vos informations avec des tiers.",
-    },
-    {
-      icon: Database,
-      title: "Sauvegarde continue",
-      description:
-        "Ne perdez jamais vos données. Tout est sauvegardé en permanence.",
-    },
-    {
-      icon: Clock,
-      title: "Toujours accessible",
-      description: "Accédez à vos données où que vous soyez, à tout moment.",
-    },
-  ];
+  const { language } = useLanguage();
+  const t = translations[language as keyof typeof translations];
+
+  const icons = [Shield, Lock, Database, Clock];
+  const features = t.security.features.map((item, index) => ({
+    icon: icons[index],
+    title: item.title,
+    description: item.description,
+  }));
 
   return (
     <section id="security" className="section-padding">
       <div className="container-max px-4">
         <div className="max-w-2xl mx-auto text-center mb-12 sm:mb-16 scroll-animate">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-brand-neutral-900 dark:text-white mb-3 sm:mb-4">
-            Vos données en toute sécurité
+            {t.security.title}
           </h2>
           <p className="text-base sm:text-lg text-brand-neutral-600 dark:text-brand-neutral-400 px-4">
-            Simple, sécurisé, fiable. Nous protégeons ce qui compte le plus.
+            {t.security.subtitle}
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16 max-w-4xl mx-auto">
@@ -46,7 +33,7 @@ export function SecuritySection() {
               100%
             </div>
             <div className="text-sm text-brand-neutral-600 dark:text-brand-neutral-400">
-              Sécurisé
+              {t.security.stats.secure}
             </div>
           </div>
 
@@ -55,10 +42,10 @@ export function SecuritySection() {
               <Lock className="w-7 h-7 sm:w-8 sm:h-8 text-blue-600 dark:text-blue-400" />
             </div>
             <div className="text-3xl sm:text-4xl font-medium text-brand-neutral-900 dark:text-white mb-2">
-              Privé
+              {t.security.stats.private}
             </div>
             <div className="text-sm text-brand-neutral-600 dark:text-brand-neutral-400">
-              Vos données vous appartiennent
+              {t.security.stats.privateDesc}
             </div>
           </div>
 
@@ -70,7 +57,7 @@ export function SecuritySection() {
               24/7
             </div>
             <div className="text-sm text-brand-neutral-600 dark:text-brand-neutral-400">
-              Toujours disponible
+              {t.security.stats.available}
             </div>
           </div>
         </div>
@@ -99,7 +86,7 @@ export function SecuritySection() {
           <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/80 dark:bg-brand-neutral-800/80 backdrop-blur-sm border border-brand-neutral-200 dark:border-brand-neutral-700">
             <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 flex-shrink-0" />
             <span className="text-xs sm:text-sm font-medium text-brand-neutral-700 dark:text-brand-neutral-300">
-              Certifié et conforme aux normes européennes
+              {t.security.certificationBadge}
             </span>
           </div>
         </div>

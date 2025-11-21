@@ -51,7 +51,7 @@ export function Footer() {
           </div>
           <div>
             <h4 className="font-medium text-white mb-4 sm:mb-6 text-sm sm:text-base">
-              Produit
+              {t.footer.product.title}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
@@ -59,7 +59,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Fonctionnalités
+                  {t.footer.product.features}
                 </a>
               </li>
               <li>
@@ -67,7 +67,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Modules
+                  {t.footer.product.modules}
                 </a>
               </li>
               <li>
@@ -75,7 +75,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Tarifs
+                  {t.footer.product.pricing}
                 </a>
               </li>
               <li>
@@ -83,7 +83,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Mises à jour
+                  {t.footer.product.updates}
                 </a>
               </li>
               <li>
@@ -91,14 +91,14 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Roadmap
+                  {t.footer.product.roadmap}
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4 sm:mb-6 text-sm sm:text-base">
-              Ressources
+              {t.footer.resources.title}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
@@ -106,7 +106,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Documentation
+                  {t.footer.resources.documentation}
                 </a>
               </li>
               <li>
@@ -114,7 +114,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Guides
+                  {t.footer.resources.guides}
                 </a>
               </li>
               <li>
@@ -122,7 +122,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Support
+                  {t.footer.resources.support}
                 </a>
               </li>
               <li>
@@ -130,7 +130,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  API
+                  {t.footer.resources.api}
                 </a>
               </li>
               <li>
@@ -138,14 +138,14 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Blog
+                  {t.footer.resources.blog}
                 </a>
               </li>
             </ul>
           </div>
           <div>
             <h4 className="font-medium text-white mb-4 sm:mb-6 text-sm sm:text-base">
-              Entreprise
+              {t.footer.company.title}
             </h4>
             <ul className="space-y-2 sm:space-y-3">
               <li>
@@ -153,7 +153,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  À propos
+                  {t.footer.company.about}
                 </a>
               </li>
               <li>
@@ -161,7 +161,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Contact
+                  {t.footer.company.contact}
                 </a>
               </li>
               <li>
@@ -169,7 +169,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Carrières
+                  {t.footer.company.careers}
                 </a>
               </li>
               <li>
@@ -177,7 +177,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Partenaires
+                  {t.footer.company.partners}
                 </a>
               </li>
               <li>
@@ -185,7 +185,7 @@ export function Footer() {
                   href="#"
                   className="hover:text-white transition-colors text-sm sm:text-base"
                 >
-                  Presse
+                  {t.footer.company.press}
                 </a>
               </li>
             </ul>
@@ -202,7 +202,7 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
               <input
                 type="email"
-                placeholder="votre@email.com"
+                placeholder={t.footer.emailPlaceholder}
                 className="flex-1 px-3 sm:px-4 py-2.5 sm:py-3 bg-brand-neutral-800 border border-brand-neutral-700 rounded-lg sm:rounded-l-xl sm:rounded-r-none text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500 text-sm sm:text-base"
               />
               <button className="px-4 sm:px-6 py-2.5 sm:py-3 bg-brand-primary-600 hover:bg-brand-primary-700 text-white rounded-lg sm:rounded-r-xl sm:rounded-l-none transition-colors text-sm sm:text-base whitespace-nowrap">
@@ -220,19 +220,19 @@ export function Footer() {
               href="#"
               className="text-brand-neutral-400 hover:text-white text-xs sm:text-sm transition-colors"
             >
-              Confidentialité
+              {t.footer.legal.privacy}
             </a>
             <a
               href="#"
               className="text-brand-neutral-400 hover:text-white text-xs sm:text-sm transition-colors"
             >
-              Conditions
+              {t.footer.legal.terms}
             </a>
             <a
               href="#"
               className="text-brand-neutral-400 hover:text-white text-xs sm:text-sm transition-colors"
             >
-              Cookies
+              {t.footer.legal.cookies}
             </a>
           </div>
         </div>

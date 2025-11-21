@@ -42,7 +42,7 @@ export function SolutionSection() {
                 <div className="w-10 sm:w-12 h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full mb-3 sm:mb-4"></div>
 
                 <p className="text-brand-neutral-600 dark:text-brand-neutral-400 text-sm leading-relaxed">
-                  Détection instantanée et analyse intelligente de vos données
+                  {t.solution.steps.analyzeDesc}
                 </p>
               </div>
             </div>
@@ -61,8 +61,7 @@ export function SolutionSection() {
                 <div className="w-10 sm:w-12 h-1 bg-gradient-to-r from-purple-500 to-transparent rounded-full mb-3 sm:mb-4"></div>
 
                 <p className="text-brand-neutral-600 dark:text-brand-neutral-400 text-sm leading-relaxed">
-                  Identification précise des informations sensibles et
-                  confidentielles
+                  {t.solution.steps.detectDesc}
                 </p>
               </div>
             </div>
@@ -81,7 +80,7 @@ export function SolutionSection() {
                 <div className="w-10 sm:w-12 h-1 bg-gradient-to-r from-green-500 to-transparent rounded-full mb-3 sm:mb-4"></div>
 
                 <p className="text-brand-neutral-600 dark:text-brand-neutral-400 text-sm leading-relaxed">
-                  Protection automatique et masquage sécurisé des données
+                  {t.solution.steps.anonymizeDesc}
                 </p>
               </div>
             </div>
@@ -100,7 +99,7 @@ export function SolutionSection() {
                 <div className="w-10 sm:w-12 h-1 bg-gradient-to-r from-orange-500 to-transparent rounded-full mb-3 sm:mb-4"></div>
 
                 <p className="text-brand-neutral-600 dark:text-brand-neutral-400 text-sm leading-relaxed">
-                  Conservation du contexte pour une productivité maximale
+                  {t.solution.steps.preserveDesc}
                 </p>
               </div>
             </div>

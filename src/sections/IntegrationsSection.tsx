@@ -76,15 +76,15 @@ export function IntegrationsSection() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400 px-4">
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Certified Partners</span>
+              <span>{t.integrations.badges.certified}</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse animation-delay-200"></div>
-              <span>Enterprise Ready</span>
+              <span>{t.integrations.badges.enterprise}</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse animation-delay-400"></div>
-              <span>Secure Integration</span>
+              <span>{t.integrations.badges.secure}</span>
             </div>
           </div>
         </div>
