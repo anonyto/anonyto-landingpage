@@ -9,7 +9,7 @@ import {
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import { AnimatedNumber } from "../components/AnimatedNumber";
-import AnonymizerLogo from "../assets/AnonymizerLogo.png";
+import AnonytoLogo from "../assets/AnonymizerLogo.png";
 
 export function HeroSection() {
   const { language } = useLanguage();
@@ -78,8 +78,8 @@ export function HeroSection() {
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center">
                     <img
-                      src={AnonymizerLogo}
-                      alt="Anonymizer"
+                      src={AnonytoLogo}
+                      alt="Anonyto"
                       className="w-full h-full object-contain"
                     />
                   </div>

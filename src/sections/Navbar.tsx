@@ -43,7 +43,7 @@ export function Navbar({ activeSection }: NavbarProps) {
           <div className="flex items-center">
             <img
               src={theme === "dark" ? corezaLogos.dark : corezaLogos.light}
-              alt="Anonymizer Logo"
+              alt="Anonyto Logo"
               className="h-8 sm:h-10 w-auto object-contain"
             />
           </div>

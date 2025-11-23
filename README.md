@@ -1,6 +1,6 @@
 # Anonyto Landing Page
 
-Anonymizer - The Security Layer Your Team Needs
+Anonyto - The Security Layer Your Team Needs
 
 ## Description
 

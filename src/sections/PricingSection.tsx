@@ -21,10 +21,25 @@ export function PricingSection() {
               <h3 className="text-xl sm:text-2xl font-bold text-brand-neutral-900 dark:text-white mb-2">
                 {t.pricing.starter.name}
               </h3>
-              <div className="flex items-baseline gap-2 mb-3 sm:mb-4">
-                <span className="text-4xl sm:text-5xl font-bold text-brand-neutral-900 dark:text-white">
-                  {t.pricing.starter.price}
-                </span>
+              <div className="flex items-end gap-3 mb-3 sm:mb-4">
+                <div className="flex flex-col">
+                  <span className="text-lg sm:text-xl font-bold text-brand-neutral-400 dark:text-brand-neutral-500 line-through leading-tight">
+                    {t.pricing.starter.originalPrice}
+                  </span>
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-4xl sm:text-5xl font-bold text-brand-neutral-900 dark:text-white">
+                      {t.pricing.starter.price}
+                    </span>
+                    <span className="text-sm sm:text-base text-brand-neutral-600 dark:text-brand-neutral-400">
+                      {t.pricing.starter.period}
+                    </span>
+                  </div>
+                </div>
+                <div className="mb-2">
+                  <span className="bg-green-500 text-white text-xs sm:text-sm font-bold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-lg">
+                    {t.pricing.discount}
+                  </span>
+                </div>
               </div>
               <p className="text-sm sm:text-base text-brand-neutral-600 dark:text-brand-neutral-300">
                 {t.pricing.starter.desc}
@@ -60,8 +75,8 @@ export function PricingSection() {
               </h3>
               <div className="flex items-end gap-3 mb-1">
                 <div className="flex flex-col">
-                  <span className="text-2xl sm:text-3xl font-bold text-white/50 line-through leading-tight">
-                    $12
+                  <span className="text-lg sm:text-xl font-bold text-white/50 line-through leading-tight">
+                    {t.pricing.pro.originalPrice}
                   </span>
                   <div className="flex items-baseline gap-2">
                     <span className="text-4xl sm:text-5xl font-bold text-white">
@@ -74,13 +89,18 @@ export function PricingSection() {
                 </div>
                 <div className="mb-2">
                   <span className="bg-green-500 text-white text-xs sm:text-sm font-bold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full shadow-lg">
-                    -58%
+                    {t.pricing.discountAnnual}
                   </span>
                 </div>
               </div>
-              <p className="text-sm sm:text-base text-white/90">
+              <p className="text-sm sm:text-base text-white/90 mb-2">
                 {t.pricing.pro.desc}
               </p>
+              {t.pricing.pro.savings && (
+                <p className="text-xs sm:text-sm text-green-300 font-medium">
+                  {t.pricing.pro.savings}
+                </p>
+              )}
             </div>
 
             <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
@@ -125,14 +145,12 @@ export function PricingSection() {
               ))}
             </ul>
 
-            <a
-              href="https://join-anonyto.systeme.io/36805238"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => window.open('https://tally.so/r/wAQe9P', '_blank')}
               className="w-full py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg bg-brand-primary-600 text-white hover:bg-brand-primary-700 font-medium transition-colors text-sm sm:text-base inline-flex items-center justify-center"
             >
               {t.pricing.enterprise.cta}
-            </a>
+            </button>
           </div>
         </div>
       </div>

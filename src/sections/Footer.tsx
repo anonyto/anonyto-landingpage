@@ -15,7 +15,7 @@ export function Footer() {
             <div className="flex items-center mb-4 sm:mb-6">
               <img
                 src={corezaLogos.dark}
-                alt="Anonymizer Logo"
+                alt="Anonyto Logo"
                 className="h-8 sm:h-10 w-auto object-contain"
               />
             </div>

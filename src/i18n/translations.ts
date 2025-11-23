@@ -12,13 +12,13 @@ export const translations = {
     },
     hero: {
       title:
-        "Protégez les données de votre entreprise avant qu'elles ne sortent",
-      subtitle: "La couche de sécurité dont votre équipe a besoin",
-      desc: "Les employés utilisent des outils IA comme ChatGPT et Copilot chaque jour, mais beaucoup partagent sans le savoir des informations confidentielles. Anonymizer détecte et anonymise automatiquement les données sensibles avant qu'elles ne soient envoyées.",
+        "Protégez vos données personnelles avant qu'elles ne sortent",
+      subtitle: "La couche de sécurité dont vous avez besoin",
+      desc: "Vous utilisez des outils IA comme ChatGPT et Copilot chaque jour, mais vous partagez parfois sans le savoir des informations personnelles. Anonyto détecte et anonymise automatiquement vos données sensibles avant qu'elles ne soient envoyées.",
       start: "Essayer gratuitement",
       schedule: "Réserver une démo",
       trusted:
-        "Fait confiance par des équipes qui veulent une productivité rapide sans compromettre la sécurité",
+        "Fait confiance par des milliers d'utilisateurs qui veulent une productivité rapide sans compromettre leur vie privée",
       newsletter: {
         title:
           "Gardez une longueur d'avance sur les fuites de données liées à l'IA",
@@ -46,46 +46,46 @@ export const translations = {
     },
     problem: {
       title:
-        "L'essor de la productivité IA s'accompagne d'un risque de sécurité massif",
-      stat: "Plus de 57% des employés ont déjà partagé des informations sensibles avec des outils IA, souvent sans s'en rendre compte.",
-      cost: "Selon IBM, une seule violation de données coûte en moyenne 5M$ aux entreprises.",
+        "L'essor de la productivité IA s'accompagne d'un risque pour votre vie privée",
+      stat: "Plus de 57% des utilisateurs ont déjà partagé des informations personnelles avec des outils IA, souvent sans s'en rendre compte.",
+      cost: "Vos données personnelles peuvent être utilisées pour entraîner des modèles IA ou partagées avec des tiers.",
       points: {
-        want: "Les employés veulent travailler plus vite.",
-        help: "Les outils IA aident.",
-        but: "Mais ces outils n'ont jamais été conçus pour protéger les données de votre entreprise.",
+        want: "Vous voulez travailler plus vite.",
+        help: "Les outils IA vous aident.",
+        but: "Mais ces outils n'ont jamais été conçus pour protéger votre vie privée.",
       },
     },
     solution: {
       title:
-        "Voici Anonymizer, la couche de sécurité dont votre équipe a besoin",
+        "Voici Anonyto, la protection dont vous avez besoin",
       subtitle:
-        "Comme Grammarly corrige l'écriture, Anonymizer protège vos données.",
+        "Comme Grammarly corrige l'écriture, Anonyto protège votre vie privée.",
       intro:
         "Avant que tout texte ne soit envoyé à ChatGPT, Copilot, Gemini ou tout autre outil IA :",
       steps: {
         analyze: "Nous l'analysons en temps réel",
         analyzeDesc: "Détection instantanée et analyse intelligente de vos données",
-        detect: "Nous détectons les informations confidentielles ou sensibles",
+        detect: "Nous détectons les informations personnelles sensibles",
         detectDesc:
-          "Identification précise des informations sensibles et confidentielles",
+          "Identification précise de vos informations personnelles et confidentielles",
         anonymize: "Nous l'anonymisons ou le masquons instantanément",
-        anonymizeDesc: "Protection automatique et masquage sécurisé des données",
+        anonymizeDesc: "Protection automatique et masquage sécurisé de vos données",
         preserve:
-          "Nous préservons le sens pour que le travail reste rapide et fluide",
-        preserveDesc: "Conservation du contexte pour une productivité maximale",
+          "Nous préservons le sens pour que votre travail reste rapide et fluide",
+        preserveDesc: "Conservation du contexte pour votre productivité maximale",
       },
       conclusion:
-        "Votre entreprise reste en sécurité, vos employés restent productifs.",
+        "Votre vie privée reste protégée, vous restez productif.",
     },
     howItWorks: {
       title: "Comment ça marche",
       step1: {
-        title: "Les employés écrivent normalement",
-        desc: "Pas de nouveaux outils, pas de changement de flux de travail.",
+        title: "Vous écrivez normalement",
+        desc: "Pas de nouveaux outils, pas de changement dans vos habitudes.",
       },
       step2: {
         title: "Analyse en temps réel",
-        desc: "Anonymizer scanne le texte au moment où il est tapé.",
+        desc: "Anonyto scanne le texte au moment où il est tapé.",
       },
       step3: {
         title: "Les données sensibles sont anonymisées",
@@ -100,27 +100,27 @@ export const translations = {
     },
     stats: {
       title: "Des résultats qui parlent",
-      subtitle: "Protégez votre entreprise sans ralentir la productivité",
-      customers: "Clients actifs",
+      subtitle: "Protégez votre vie privée sans ralentir votre productivité",
+      customers: "Utilisateurs actifs",
       countries: "Pays",
       uptime: "Disponibilité",
-      satisfaction: "Satisfaction client",
+      satisfaction: "Satisfaction utilisateurs",
     },
     modules: {
       title: "Fonctionnalités clés",
       subtitle:
-        "Tout ce dont vous avez besoin pour protéger vos données sensibles",
+        "Tout ce dont vous avez besoin pour protéger vos données personnelles",
       cta: "Découvrir toutes les fonctionnalités",
       items: [
         {
           name: "Anonymisation IA en temps réel",
           description:
-            "Détection et anonymisation instantanée des données sensibles pendant que vous tapez",
+            "Détection et anonymisation instantanée de vos données personnelles pendant que vous tapez",
         },
         {
-          name: "Détection avancée des données sensibles",
+          name: "Détection avancée des données personnelles",
           description:
-            "Identifie les noms, données clients, processus internes, infos financières et plus",
+            "Identifie les noms, adresses, numéros de téléphone, emails, infos bancaires et plus",
         },
         {
           name: "Fonctionne avec tous les outils IA",
@@ -130,22 +130,22 @@ export const translations = {
         {
           name: "Extension navigateur + intégration desktop",
           description:
-            "Installation facile en moins de 2 minutes, aucun changement de flux de travail requis",
+            "Installation facile en moins de 2 minutes, aucun changement dans vos habitudes",
         },
         {
           name: "Niveaux de sensibilité personnalisables",
           description:
-            "Contrôlez ce qui compte comme sensible selon les besoins de votre entreprise",
+            "Contrôlez ce qui compte comme sensible selon vos préférences personnelles",
         },
         {
-          name: "Tableau de bord admin & logs d'audit",
+          name: "Tableau de bord personnel",
           description:
-            "Suivez l'utilisation, examinez les incidents et maintenez la conformité",
+            "Suivez votre utilisation et consultez l'historique de protection de vos données",
         },
         {
-          name: "Politiques d'équipe & contrôle d'accès",
+          name: "Protection multi-appareils",
           description:
-            "Définissez des règles par département, rôle ou niveau de sensibilité des données",
+            "Utilisez Anonyto sur tous vos appareils avec synchronisation automatique",
         },
         {
           name: "Zéro stockage de données",
@@ -153,9 +153,9 @@ export const translations = {
             "Nous ne conservons jamais votre contenu, traitement local ou éphémère uniquement",
         },
         {
-          name: "Prêt pour le RGPD",
+          name: "Respect de votre vie privée",
           description:
-            "Construit avec la conformité à l'esprit pour les entreprises européennes et mondiales",
+            "Construit avec le respect de la vie privée au cœur, conforme RGPD",
         },
         {
           name: "Chiffrement de bout en bout",
@@ -167,16 +167,16 @@ export const translations = {
             "L'anonymisation se fait en millisecondes, pas de ralentissement perceptible",
         },
         {
-          name: "Support prioritaire",
+          name: "Support réactif",
           description:
-            "Accès à notre équipe d'experts pour l'intégration et le support continu",
+            "Notre équipe est là pour vous aider à tout moment",
         },
       ],
     },
     features: {
-      title: "Pour qui est Anonymizer ?",
+      title: "Pour qui est Anonyto ?",
       subtitle:
-        "Des équipes de tous secteurs utilisent Anonymizer pour rester productives en toute sécurité",
+        "Des milliers d'utilisateurs utilisent Anonyto pour rester productifs en toute sécurité",
       ai: "IA intégrée",
       mobile: "Mobile natif",
       realtime: "Temps réel",
@@ -185,44 +185,44 @@ export const translations = {
       multilingual: "Multilingue",
       items: [
         {
-          title: "Entreprises adoptant l'IA",
+          title: "Étudiants",
           description:
-            "Pour les organisations qui veulent utiliser l'IA en toute sécurité sans exposer leurs données",
+            "Utilisez l'IA pour vos devoirs et recherches sans partager vos données personnelles",
         },
         {
-          title: "Équipes juridiques",
+          title: "Freelancers & Indépendants",
           description:
-            "Protégez la confidentialité client tout en bénéficiant de l'assistance IA pour la rédaction",
+            "Protégez vos projets clients et vos informations professionnelles en utilisant l'IA",
         },
         {
-          title: "RH & Paie",
+          title: "Créateurs de contenu",
           description:
-            "Gérez les données sensibles des employés sans risque de fuite d'informations personnelles",
+            "Créez du contenu avec l'aide de l'IA tout en préservant vos idées et données personnelles",
         },
         {
-          title: "Départements financiers",
+          title: "Professionnels de santé",
           description:
-            "Utilisez l'IA pour l'analyse financière sans exposer de chiffres confidentiels",
+            "Utilisez l'IA pour votre travail sans exposer d'informations sensibles ou médicales",
         },
         {
-          title: "Support & Service client",
+          title: "Développeurs & Designers",
           description:
-            "Répondez plus rapidement aux clients avec l'IA tout en protégeant leurs informations",
+            "Accélérez votre travail avec l'IA sans partager votre code ou vos créations",
         },
         {
-          title: "R&D & Ingénierie",
+          title: "Chercheurs & Scientifiques",
           description:
-            "Accélérez l'innovation avec l'IA sans compromettre la propriété intellectuelle",
+            "Bénéficiez de l'assistance IA pour vos recherches sans compromettre vos découvertes",
         },
         {
-          title: "Agences gérant les données clients",
+          title: "Utilisateurs soucieux de leur vie privée",
           description:
-            "Protégez les données de vos clients tout en utilisant l'IA pour améliorer vos services",
+            "Pour tous ceux qui veulent utiliser l'IA tout en gardant le contrôle sur leurs données",
         },
         {
-          title: "Entreprises conformes RGPD/ISO/HIPAA",
+          title: "Parents & Familles",
           description:
-            "Maintenez votre conformité tout en adoptant les outils IA modernes",
+            "Protégez les informations de votre famille lors de l'utilisation d'outils IA",
         },
       ],
     },
@@ -276,57 +276,66 @@ export const translations = {
       },
     },
     pricing: {
-      title: "Choisissez le bon plan pour votre équipe",
+      title: "Choisissez le bon plan pour vous",
       badge: "Plus populaire",
+      discount: "-40%",
+      discountAnnual: "-66%",
       starter: {
-        name: "Starter",
-        price: "Gratuit",
-        desc: "Pour les tests et l'utilisation individuelle",
-        cta: "Commencer gratuitement",
+        name: "Mensuel",
+        price: "$12",
+        originalPrice: "$20",
+        period: "/ mois",
+        desc: "Pour les utilisateurs individuels",
+        cta: "Rejoindre la liste d'attente",
         features: [
           "Détection en temps réel",
-          "Anonymisation de base",
+          "Anonymisation illimitée",
           "Extension navigateur",
-          "Usage quotidien limité",
-          "Support communautaire",
+          "Détection avancée",
+          "Support prioritaire",
+          "Multi-appareils",
         ],
       },
       pro: {
-        name: "Pro",
-        price: "$5",
-        period: "/ utilisateur / mois",
-        desc: "Pour les petites équipes qui ont besoin d'une protection complète",
-        cta: "Obtenir Pro",
+        name: "Annuel",
+        price: "$49",
+        originalPrice: "$144",
+        period: "/ an",
+        savings: "Économisez $95",
+        desc: "Pour les utilisateurs réguliers (4.08$/mois)",
+        cta: "Rejoindre la liste d'attente",
         features: [
-          "Tout de Starter",
-          "Anonymisation illimitée",
-          "Modèles de détection avancés",
-          "Règles personnalisées",
-          "Support prioritaire",
+          "Tout du plan Mensuel",
+          "2 mois gratuits",
+          "Règles personnalisées avancées",
+          "Historique illimité",
+          "Support premium",
+          "Accès anticipé aux nouvelles fonctionnalités",
         ],
       },
       enterprise: {
-        name: "Enterprise",
+        name: "Entreprise",
         price: "Sur mesure",
-        desc: "Pour les grandes entreprises ou les environnements à haut risque",
-        cta: "Contacter les ventes",
+        desc: "Solutions personnalisées pour votre organisation",
+        cta: "Contactez-nous",
         features: [
-          "Tout de Pro",
+          "Tout du plan Annuel",
           "Tableau de bord admin",
-          "Politiques d'équipe",
+          "Gestion d'équipe",
           "SSO & sécurité avancée",
-          "Support dédié",
+          "Support dédié 24/7",
+          "Formation personnalisée",
         ],
       },
     },
     faq: {
       title: "Questions fréquentes",
       q1: {
-        q: "Anonymizer fonctionne-t-il avec ChatGPT, Copilot, Gemini et d'autres ?",
+        q: "Anonyto fonctionne-t-il avec ChatGPT, Copilot, Gemini et d'autres ?",
         a: "Oui. Il fonctionne avec tout outil IA basé sur navigateur ou desktop.",
       },
       q2: {
-        q: "Stockez-vous nos données ?",
+        q: "Stockez-vous mes données ?",
         a: "Non. Nous traitons le texte localement ou de manière éphémère. Rien n'est sauvegardé.",
       },
       q3: {
@@ -334,16 +343,16 @@ export const translations = {
         a: "Cela prend moins de deux minutes, il suffit d'installer l'extension.",
       },
       q4: {
-        q: "Pouvons-nous contrôler ce qui compte comme sensible ?",
-        a: "Oui. Les entreprises peuvent entièrement personnaliser les règles de détection et d'anonymisation.",
+        q: "Puis-je contrôler ce qui compte comme sensible ?",
+        a: "Oui. Vous pouvez entièrement personnaliser les règles de détection et d'anonymisation selon vos préférences.",
       },
       q5: {
-        q: "Cela ralentira-t-il les employés ?",
-        a: "Pas du tout. L'anonymisation se fait en temps réel.",
+        q: "Cela va-t-il ralentir mon travail ?",
+        a: "Pas du tout. L'anonymisation se fait en temps réel sans ralentissement.",
       },
       q6: {
         q: "Comment fonctionne l'anonymisation exactement ?",
-        a: "Anonymizer utilise des algorithmes d'IA avancés pour détecter et masquer automatiquement les informations sensibles comme les noms, adresses email, numéros de téléphone, données financières et autres informations confidentielles avant qu'elles ne soient envoyées à des outils externes.",
+        a: "Anonyto utilise des algorithmes d'IA avancés pour détecter et masquer automatiquement les informations sensibles comme les noms, adresses email, numéros de téléphone, données financières et autres informations confidentielles avant qu'elles ne soient envoyées à des outils externes.",
       },
     },
     testimonials: {
@@ -352,21 +361,21 @@ export const translations = {
       subtitle: "",
     },
     cta: {
-      title: "Gardez vos données en sécurité sans ralentir votre équipe",
+      title: "Protégez votre vie privée sans ralentir votre productivité",
       subtitle:
-        "Commencez à utiliser Anonymizer aujourd'hui et éliminez la source n°1 de fuites de données d'entreprise.",
+        "Commencez à utiliser Anonyto aujourd'hui et gardez le contrôle sur vos données personnelles.",
       start: "Commencer gratuitement",
-      contact: "Réserver une démo",
+      contact: "En savoir plus",
     },
     footer: {
       tagline:
-        "Protégez les données de votre entreprise avant qu'elles ne sortent",
+        "Protégez vos données personnelles avant qu'elles ne sortent",
       newsletter: "Restez informé",
       newsletterDesc:
         "Abonnez-vous pour les mises à jour produit, l'accès anticipé et les insights de sécurité.",
       subscribe: "S'abonner",
       emailPlaceholder: "votre@email.com",
-      copyright: "2025 Anonymizer. Tous droits réservés.",
+      copyright: "2025 Anonyto. Tous droits réservés.",
       product: {
         title: "Produit",
         features: "Fonctionnalités",
@@ -410,13 +419,13 @@ export const translations = {
       integrations: "Integrations",
     },
     hero: {
-      title: "Protect Your Company's Data Before It Leaves the Building",
-      subtitle: "The Security Layer Your Team Needs",
-      desc: "Employees use AI tools like ChatGPT and Copilot every day, but many unknowingly share confidential information. Anonymizer automatically detects and anonymizes sensitive data before it's sent anywhere.",
-      start: "Try Anonymizer Free",
+      title: "Protect Your Personal Data Before It Leaves Your Device",
+      subtitle: "The Privacy Layer You Need",
+      desc: "You use AI tools like ChatGPT and Copilot every day, but you sometimes unknowingly share personal information. Anonyto automatically detects and anonymizes your sensitive data before it's sent anywhere.",
+      start: "Try Anonyto Free",
       schedule: "Book a Demo",
       trusted:
-        "Trusted by teams that want fast productivity without compromising security",
+        "Trusted by thousands of users who want fast productivity without compromising their privacy",
       newsletter: {
         title: "Stay ahead of AI-related data leaks",
         subtitle:
@@ -441,42 +450,42 @@ export const translations = {
       },
     },
     problem: {
-      title: "The AI Productivity Boom Comes With a Massive Security Risk",
-      stat: "More than 57% of employees have already shared sensitive company information with AI tools, often without realizing it.",
-      cost: "According to IBM, a single data breach costs companies an average of $5M.",
+      title: "The AI Productivity Boom Comes With Privacy Risks",
+      stat: "More than 57% of users have already shared personal information with AI tools, often without realizing it.",
+      cost: "Your personal data can be used to train AI models or shared with third parties.",
       points: {
-        want: "Employees want to work faster.",
-        help: "AI tools help.",
-        but: "But these tools were never designed to protect your business data.",
+        want: "You want to work faster.",
+        help: "AI tools help you.",
+        but: "But these tools were never designed to protect your privacy.",
       },
     },
     solution: {
-      title: "Meet Anonymizer, the Security Layer Your Team Needs",
-      subtitle: "Like Grammarly fixes writing, Anonymizer protects your data.",
+      title: "Meet Anonyto, the Privacy Protection You Need",
+      subtitle: "Like Grammarly fixes writing, Anonyto protects your privacy.",
       intro:
         "Before any text is sent to ChatGPT, Copilot, Gemini, or any AI tool:",
       steps: {
         analyze: "We analyze it in real time",
         analyzeDesc: "Instant detection and intelligent analysis of your data",
-        detect: "We detect confidential or sensitive information",
+        detect: "We detect personal sensitive information",
         detectDesc:
-          "Precise identification of sensitive and confidential information",
+          "Precise identification of your personal and confidential information",
         anonymize: "We anonymize or mask it instantly",
-        anonymizeDesc: "Automatic protection and secure data masking",
-        preserve: "We preserve meaning so work stays fast and smooth",
-        preserveDesc: "Context preservation for maximum productivity",
+        anonymizeDesc: "Automatic protection and secure masking of your data",
+        preserve: "We preserve meaning so your work stays fast and smooth",
+        preserveDesc: "Context preservation for your maximum productivity",
       },
-      conclusion: "Your company stays safe, your employees stay productive.",
+      conclusion: "Your privacy stays protected, you stay productive.",
     },
     howItWorks: {
       title: "How It Works",
       step1: {
-        title: "Employees write normally",
-        desc: "No new tools, no workflow changes.",
+        title: "You write normally",
+        desc: "No new tools, no changes to your habits.",
       },
       step2: {
         title: "Real-time analysis",
-        desc: "Anonymizer scans text the moment it's typed.",
+        desc: "Anonyto scans text the moment it's typed.",
       },
       step3: {
         title: "Sensitive data is anonymized",
@@ -490,26 +499,26 @@ export const translations = {
     },
     stats: {
       title: "Results that speak",
-      subtitle: "Protect your business without slowing down productivity",
-      customers: "Active customers",
+      subtitle: "Protect your privacy without slowing down your productivity",
+      customers: "Active users",
       countries: "Countries",
       uptime: "Uptime",
-      satisfaction: "Customer satisfaction",
+      satisfaction: "User satisfaction",
     },
     modules: {
       title: "Key Features",
-      subtitle: "Everything you need to protect your sensitive data",
+      subtitle: "Everything you need to protect your personal data",
       cta: "Discover all features",
       items: [
         {
           name: "Real-time AI Anonymization",
           description:
-            "Instant detection and anonymization of sensitive data as you type",
+            "Instant detection and anonymization of your personal data as you type",
         },
         {
-          name: "Advanced Sensitive Data Detection",
+          name: "Advanced Personal Data Detection",
           description:
-            "Identifies names, client data, internal processes, financial info and more",
+            "Identifies names, addresses, phone numbers, emails, banking info and more",
         },
         {
           name: "Works with All AI Tools",
@@ -519,22 +528,22 @@ export const translations = {
         {
           name: "Browser Extension + Desktop Integration",
           description:
-            "Easy setup in less than 2 minutes, no workflow changes required",
+            "Easy setup in less than 2 minutes, no changes to your habits",
         },
         {
           name: "Customizable Sensitivity Levels",
           description:
-            "Control what counts as sensitive based on your business needs",
+            "Control what counts as sensitive based on your personal preferences",
         },
         {
-          name: "Admin Dashboard & Audit Logs",
+          name: "Personal Dashboard",
           description:
-            "Track usage, review incidents, and maintain compliance",
+            "Track your usage and view your data protection history",
         },
         {
-          name: "Team Policies & Access Control",
+          name: "Multi-Device Protection",
           description:
-            "Set rules by department, role, or data sensitivity level",
+            "Use Anonyto on all your devices with automatic synchronization",
         },
         {
           name: "Zero Data Storage",
@@ -542,9 +551,9 @@ export const translations = {
             "We never keep your content, local or ephemeral processing only",
         },
         {
-          name: "GDPR Ready",
+          name: "Privacy First",
           description:
-            "Built with compliance in mind for European and global businesses",
+            "Built with privacy at its core, GDPR compliant",
         },
         {
           name: "End-to-End Encryption",
@@ -556,16 +565,16 @@ export const translations = {
             "Anonymization happens in milliseconds, no noticeable slowdown",
         },
         {
-          name: "Priority Support",
+          name: "Responsive Support",
           description:
-            "Access to our expert team for integration and ongoing support",
+            "Our team is here to help you at any time",
         },
       ],
     },
     features: {
       title: "Who It's For",
       subtitle:
-        "Teams across all industries use Anonymizer to stay productive safely",
+        "Thousands of users rely on Anonyto to stay productive safely",
       ai: "Integrated AI",
       mobile: "Native mobile",
       realtime: "Real-time",
@@ -574,44 +583,44 @@ export const translations = {
       multilingual: "Multilingual",
       items: [
         {
-          title: "AI-Adopting Businesses",
+          title: "Students",
           description:
-            "For organizations that want to use AI safely without exposing their data",
+            "Use AI for homework and research without sharing your personal data",
         },
         {
-          title: "Legal Teams",
+          title: "Freelancers & Self-Employed",
           description:
-            "Protect client confidentiality while benefiting from AI assistance for drafting",
+            "Protect your client projects and professional information while using AI",
         },
         {
-          title: "HR & Payroll",
+          title: "Content Creators",
           description:
-            "Manage sensitive employee data without risk of personal information leaks",
+            "Create content with AI help while preserving your ideas and personal data",
         },
         {
-          title: "Financial Departments",
+          title: "Healthcare Professionals",
           description:
-            "Use AI for financial analysis without exposing confidential figures",
+            "Use AI for your work without exposing sensitive or medical information",
         },
         {
-          title: "Support & Customer Service",
+          title: "Developers & Designers",
           description:
-            "Respond faster to customers with AI while protecting their information",
+            "Accelerate your work with AI without sharing your code or creations",
         },
         {
-          title: "R&D & Engineering",
+          title: "Researchers & Scientists",
           description:
-            "Accelerate innovation with AI without compromising intellectual property",
+            "Benefit from AI assistance for your research without compromising your discoveries",
         },
         {
-          title: "Agencies Managing Client Data",
+          title: "Privacy-Conscious Users",
           description:
-            "Protect your clients' data while using AI to improve your services",
+            "For everyone who wants to use AI while keeping control over their data",
         },
         {
-          title: "GDPR/ISO/HIPAA Compliant Companies",
+          title: "Parents & Families",
           description:
-            "Maintain your compliance while adopting modern AI tools",
+            "Protect your family's information when using AI tools",
         },
       ],
     },
@@ -663,57 +672,66 @@ export const translations = {
       },
     },
     pricing: {
-      title: "Choose the Right Plan for Your Team",
+      title: "Choose the Right Plan for You",
       badge: "Most Popular",
+      discount: "-40%",
+      discountAnnual: "-66%",
       starter: {
-        name: "Starter",
-        price: "Free",
-        desc: "For testing and individual use",
-        cta: "Start Free",
+        name: "Monthly",
+        price: "$12",
+        originalPrice: "$20",
+        period: "/ month",
+        desc: "For individual users",
+        cta: "Join the Waitlist",
         features: [
           "Real-time detection",
-          "Basic anonymization",
+          "Unlimited anonymization",
           "Browser extension",
-          "Limited daily usage",
-          "Community support",
+          "Advanced detection",
+          "Priority support",
+          "Multi-device",
         ],
       },
       pro: {
-        name: "Pro",
-        price: "$5",
-        period: "/ user / month",
-        desc: "For small teams that need full protection",
-        cta: "Get Pro",
+        name: "Annual",
+        price: "$49",
+        originalPrice: "$144",
+        period: "/ year",
+        savings: "Save $95",
+        desc: "For regular users ($4.08/month)",
+        cta: "Join the Waitlist",
         features: [
-          "Everything in Starter",
-          "Unlimited anonymization",
-          "Advanced detection models",
-          "Custom rules",
-          "Priority support",
+          "Everything in Monthly",
+          "2 months free",
+          "Advanced custom rules",
+          "Unlimited history",
+          "Premium support",
+          "Early access to new features",
         ],
       },
       enterprise: {
         name: "Enterprise",
-        price: "Custom Pricing",
-        desc: "For large companies or high-risk environments",
-        cta: "Contact Sales",
+        price: "Custom",
+        desc: "Tailored solutions for your organization",
+        cta: "Contact Us",
         features: [
-          "Everything in Pro",
+          "Everything in Annual",
           "Admin dashboard",
-          "Team policies",
+          "Team management",
           "SSO & advanced security",
-          "Dedicated support",
+          "24/7 dedicated support",
+          "Personalized training",
         ],
       },
     },
     faq: {
       title: "Frequently Asked Questions",
       q1: {
-        q: "Does Anonymizer work with ChatGPT, Copilot, Gemini, and others?",
+        q: "Does Anonyto work with ChatGPT, Copilot, Gemini, and others?",
         a: "Yes. It works with any browser-based or desktop AI tool.",
       },
       q2: {
-        q: "Do you store our data?",
+        q: "Do you store my data?",
         a: "No. We process text locally or ephemerally. Nothing is saved.",
       },
       q3: {
@@ -721,16 +739,16 @@ export const translations = {
         a: "It takes less than two minutes, just install the extension.",
       },
       q4: {
-        q: "Can we control what counts as sensitive?",
-        a: "Yes. Enterprises can fully customize detection and anonymization rules.",
+        q: "Can I control what counts as sensitive?",
+        a: "Yes. You can fully customize detection and anonymization rules according to your preferences.",
       },
       q5: {
-        q: "Will it slow down employees?",
-        a: "Not at all. Anonymization happens in real time.",
+        q: "Will it slow down my work?",
+        a: "Not at all. Anonymization happens in real time without any slowdown.",
       },
       q6: {
         q: "How does the anonymization work exactly?",
-        a: "Anonymizer uses advanced AI algorithms to automatically detect and mask sensitive information like names, email addresses, phone numbers, financial data, and other confidential information before it's sent to external tools.",
+        a: "Anonyto uses advanced AI algorithms to automatically detect and mask sensitive information like names, email addresses, phone numbers, financial data, and other confidential information before it's sent to external tools.",
       },
     },
     testimonials: {
@@ -739,20 +757,20 @@ export const translations = {
       subtitle: "",
     },
     cta: {
-      title: "Keep Your Data Safe Without Slowing Your Team Down",
+      title: "Protect Your Privacy Without Slowing Your Productivity Down",
       subtitle:
-        "Start using Anonymizer today and eliminate the #1 source of corporate data leaks.",
+        "Start using Anonyto today and keep control over your personal data.",
       start: "Start Free",
-      contact: "Book a Demo",
+      contact: "Learn More",
     },
     footer: {
-      tagline: "Protect your company's data before it leaves the building",
+      tagline: "Protect your personal data before it leaves your device",
       newsletter: "Stay Informed",
       newsletterDesc:
         "Subscribe for product updates, early access, and security insights.",
       subscribe: "Subscribe",
       emailPlaceholder: "your@email.com",
-      copyright: "2025 Anonymizer. All rights reserved.",
+      copyright: "2025 Anonyto. All rights reserved.",
       product: {
         title: "Product",
         features: "Features",
