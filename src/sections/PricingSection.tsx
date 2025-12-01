@@ -99,6 +99,15 @@ export function PricingSection() {
               {t.pricing.badge}
             </div>
 
+            {/* Savings Badge - Top Right Corner (Annual only) */}
+            {isAnnual && t.pricing.pro.annual.savings && (
+              <div className="absolute top-6 right-6 bg-green-500 text-white px-3 py-1.5 rounded-lg shadow-lg transition-all duration-300 animate-fade-in">
+                <p className="text-xs sm:text-sm font-bold whitespace-nowrap">
+                  {t.pricing.pro.annual.savings}
+                </p>
+              </div>
+            )}
+
             <div className="mb-6 flex-grow">
               <h3 className="text-3xl sm:text-4xl font-light text-white mb-4 tracking-wide">
                 {t.pricing.pro.name}
@@ -129,25 +138,11 @@ export function PricingSection() {
                   </span>
                 </div>
               </div>
-              <p className="text-sm sm:text-base text-white/90 mb-2 transition-all duration-300">
+              <p className="text-sm sm:text-base text-white/90 mb-4 transition-all duration-300">
                 {isAnnual
                   ? t.pricing.pro.annual.desc
                   : t.pricing.pro.monthly.desc}
               </p>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  isAnnual ? "max-h-20 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                {isAnnual && t.pricing.pro.annual.savings && (
-                  <div className="inline-flex items-center gap-2 bg-green-500/20 backdrop-blur-sm px-3 py-1.5 rounded-full mb-4">
-                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                    <p className="text-xs sm:text-sm text-green-100 font-semibold">
-                      {t.pricing.pro.annual.savings}
-                    </p>
-                  </div>
-                )}
-              </div>
 
               <ul className="space-y-2.5 sm:space-y-3 mb-6">
                 {(isAnnual
@@ -213,7 +208,9 @@ export function PricingSection() {
                   contactSection.scrollIntoView({ behavior: "smooth" });
                   // Set form type to enterprise after a short delay
                   setTimeout(() => {
-                    const enterpriseBtn = document.querySelector('[data-form-type="enterprise"]') as HTMLButtonElement;
+                    const enterpriseBtn = document.querySelector(
+                      '[data-form-type="enterprise"]'
+                    ) as HTMLButtonElement;
                     if (enterpriseBtn) {
                       enterpriseBtn.click();
                     }

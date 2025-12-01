@@ -281,12 +281,12 @@ export const translations = {
       discountAnnual: "-66%",
       free: {
         name: "Essai",
-        price: "0$",
+        price: "Gratuit",
         monthly: {
-          period: "/ mois",
+          period: "",
         },
         annual: {
-          period: "/ an",
+          period: "",
         },
         desc: "Pour commencer avec les bases",
         cta: "Commencer gratuitement",
@@ -352,7 +352,7 @@ export const translations = {
         desc: "Solutions personnalisées pour votre organisation",
         cta: "Contactez-nous",
         features: [
-          "Tout du plan Annuel",
+          "Tout du plan Pro",
           "Tableau de bord admin",
           "Gestion d'équipe",
           "SSO & sécurité avancée",
@@ -724,12 +724,12 @@ export const translations = {
       discountAnnual: "-66%",
       free: {
         name: "Starter",
-        price: "0$",
+        price: "Free",
         monthly: {
-          period: "/ month",
+          period: "",
         },
         annual: {
-          period: "/ year",
+          period: "",
         },
         desc: "Get started with the basics",
         cta: "Start Free",
@@ -795,7 +795,7 @@ export const translations = {
         desc: "Tailored solutions for your organization",
         cta: "Contact Us",
         features: [
-          "Everything in Annual",
+          "Everything in Pro",
           "Admin dashboard",
           "Team management",
           "SSO & advanced security",

@@ -3,44 +3,51 @@
 ## Setup Instructions
 
 1. **Create an EmailJS Account**
+
    - Go to [https://www.emailjs.com/](https://www.emailjs.com/)
    - Sign up for a free account
 
 2. **Create Email Service**
+
    - Go to "Email Services" in the dashboard
    - Add a new service (Gmail, Outlook, etc.)
    - Copy the Service ID
 
 3. **Create Email Templates**
-   
+
    You need to create TWO templates:
-   
+
    ### Template 1: Enterprise Inquiries
+
    - Name: "Enterprise Contact Form"
    - Subject: "New Enterprise Inquiry - {{title}}"
    - Content:
+
      ```
      From: {{from_email}}
      Company: {{company}}
      Subject: {{title}}
-     
+
      Message:
      {{description}}
      ```
-   
+
    ### Template 2: General Questions
+
    - Name: "General Contact Form"
    - Subject: "New Contact Form Submission - {{title}}"
    - Content:
+
      ```
      From: {{from_email}}
      Subject: {{title}}
-     
+
      Message:
      {{description}}
      ```
 
 4. **Get Your Credentials**
+
    - Service ID: Found in "Email Services"
    - Template IDs: Found in "Email Templates" (one for each template)
    - Public Key: Found in "Account" > "General"
@@ -56,6 +63,7 @@
 ## Testing
 
 After configuration:
+
 1. Restart your dev server: `npm run dev`
 2. Navigate to the Contact section
 3. Fill out the form and test both Enterprise and General form types
@@ -77,11 +85,13 @@ After configuration:
 ## Form Fields
 
 **General Form:**
+
 - Email (required)
 - Subject (required, min 3 chars)
 - Message (required, min 10 chars)
 
 **Enterprise Form:**
+
 - Email (required)
 - Company Name (required)
 - Subject (required, min 3 chars)

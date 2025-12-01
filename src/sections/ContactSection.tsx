@@ -275,9 +275,7 @@ export function ContactSection() {
                     type="text"
                     id="name"
                     value={formData.name}
-                    onChange={(e) =>
-                      handleInputChange("name", e.target.value)
-                    }
+                    onChange={(e) => handleInputChange("name", e.target.value)}
                     className={`w-full px-4 py-3 rounded-lg border bg-white dark:bg-brand-neutral-800 text-brand-neutral-900 dark:text-white transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-primary-500 placeholder:text-brand-neutral-400 dark:placeholder:text-brand-neutral-500 ${
                       errors.name
                         ? "border-red-500 focus:border-red-500"
