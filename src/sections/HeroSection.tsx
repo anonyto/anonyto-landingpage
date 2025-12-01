@@ -6,6 +6,7 @@ import {
   Lock,
   DollarSign,
 } from "lucide-react";
+import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import { AnimatedNumber } from "../components/AnimatedNumber";
@@ -14,6 +15,7 @@ import AnonytoLogo from "../assets/AnonymizerLogo.png";
 export function HeroSection() {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
+  const [isAnonytoActive, setIsAnonytoActive] = useState(true);
 
   return (
     <section className="relative pt-16 sm:pt-20 pb-8 sm:pb-12 min-h-screen flex items-center overflow-hidden">
@@ -84,62 +86,145 @@ export function HeroSection() {
                     />
                   </div>
                 </div>
-                <div className="flex items-center gap-1.5 sm:gap-2">
-                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
-                    {t.hero.dashboard.online}
-                  </span>
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-1.5 sm:gap-2">
+                    <div
+                      className={`w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full ${
+                        isAnonytoActive
+                          ? "bg-green-500 animate-pulse"
+                          : "bg-red-500"
+                      }`}
+                    ></div>
+                    <span className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
+                      {isAnonytoActive ? t.hero.dashboard.online : "Désactivé"}
+                    </span>
+                  </div>
+                  {/* Toggle Switch */}
+                  <button
+                    onClick={() => setIsAnonytoActive(!isAnonytoActive)}
+                    className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+                      isAnonytoActive ? "bg-green-500" : "bg-red-500"
+                    }`}
+                  >
+                    <span
+                      className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                        isAnonytoActive ? "translate-x-6" : "translate-x-1"
+                      }`}
+                    />
+                  </button>
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
-                <div className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all duration-300 group">
+                <div
+                  className={`bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 border transition-all duration-300 ${
+                    isAnonytoActive
+                      ? "border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500"
+                      : "border-red-200 dark:border-red-900/50"
+                  }`}
+                >
                   <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
-                    <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-green-500" />
-                    <span className="text-xs sm:text-sm text-green-600 dark:text-green-400 font-medium">
-                      -57%
+                    <Shield
+                      className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${
+                        isAnonytoActive ? "text-green-500" : "text-red-500"
+                      }`}
+                    />
+                    <span
+                      className={`text-xs sm:text-sm font-medium ${
+                        isAnonytoActive
+                          ? "text-green-600 dark:text-green-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {isAnonytoActive ? "-57%" : "+87%"}
                     </span>
                   </div>
                   <AnimatedNumber
-                    end={57}
+                    end={isAnonytoActive ? 57 : 87}
                     suffix="%"
-                    className="text-2xl sm:text-3xl font-semibold text-brand-neutral-900 dark:text-white mb-1"
+                    className={`text-2xl sm:text-3xl font-semibold mb-1 ${
+                      isAnonytoActive
+                        ? "text-brand-neutral-900 dark:text-white"
+                        : "text-red-600 dark:text-red-400"
+                    }`}
                   />
                   <p className="text-xs sm:text-sm text-brand-neutral-500 dark:text-brand-neutral-400">
-                    {t.hero.dashboard.riskReduced}
+                    {isAnonytoActive
+                      ? t.hero.dashboard.riskReduced
+                      : "Risque élevé"}
                   </p>
                 </div>
-                <div className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all duration-300 group">
+                <div
+                  className={`bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-xl sm:rounded-2xl p-3 sm:p-4 border transition-all duration-300 ${
+                    isAnonytoActive
+                      ? "border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500"
+                      : "border-red-200 dark:border-red-900/50"
+                  }`}
+                >
                   <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
-                    <DollarSign className="w-4 h-4 text-blue-500" />
-                    <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                      Économie
+                    <DollarSign
+                      className={`w-4 h-4 ${
+                        isAnonytoActive ? "text-blue-500" : "text-red-500"
+                      }`}
+                    />
+                    <span
+                      className={`text-xs font-medium ${
+                        isAnonytoActive
+                          ? "text-blue-600 dark:text-blue-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {isAnonytoActive ? "Économie" : "Perte potentielle"}
                     </span>
                   </div>
                   <AnimatedNumber
-                    end={5}
+                    end={isAnonytoActive ? 5 : 8}
                     suffix="M"
                     prefix="$"
-                    className="text-3xl font-semibold text-brand-neutral-900 dark:text-white mb-1"
+                    className={`text-3xl font-semibold mb-1 ${
+                      isAnonytoActive
+                        ? "text-brand-neutral-900 dark:text-white"
+                        : "text-red-600 dark:text-red-400"
+                    }`}
                   />
                   <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
                     {t.hero.dashboard.perIncident}
                   </p>
                 </div>
               </div>
-              <div className="bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-2xl p-4 mb-6 border border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500 transition-all duration-300">
+              <div
+                className={`bg-brand-neutral-50 dark:bg-brand-neutral-900/50 rounded-2xl p-4 mb-6 border transition-all duration-300 ${
+                  isAnonytoActive
+                    ? "border-brand-neutral-200 dark:border-brand-neutral-700 hover:border-brand-primary-500 dark:hover:border-brand-primary-500"
+                    : "border-red-200 dark:border-red-900/50"
+                }`}
+              >
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <h4 className="text-sm font-medium text-brand-neutral-900 dark:text-white mb-1">
-                      {t.hero.dashboard.realtimeProtection}
+                      {isAnonytoActive
+                        ? t.hero.dashboard.realtimeProtection
+                        : "Protection désactivée"}
                     </h4>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
-                      {t.hero.dashboard.detectionRate}
+                      {isAnonytoActive
+                        ? t.hero.dashboard.detectionRate
+                        : "Aucune détection active"}
                     </p>
                   </div>
-                  <span className="text-sm text-green-600 dark:text-green-400 font-medium flex items-center gap-1">
-                    <CheckCircle className="w-4 h-4" />
-                    99%
+                  <span
+                    className={`text-sm font-medium flex items-center gap-1 ${
+                      isAnonytoActive
+                        ? "text-green-600 dark:text-green-400"
+                        : "text-red-600 dark:text-red-400"
+                    }`}
+                  >
+                    {isAnonytoActive ? (
+                      <CheckCircle className="w-4 h-4" />
+                    ) : (
+                      <AlertCircle className="w-4 h-4" />
+                    )}
+                    {isAnonytoActive ? "99%" : "0%"}
                   </span>
                 </div>
                 <div className="h-24 flex items-end justify-between gap-1 mb-4">
@@ -196,19 +281,35 @@ export function HeroSection() {
                 </div>
                 <div className="grid grid-cols-3 gap-4">
                   <div className="text-center group cursor-default">
-                    <div className="text-2xl font-medium text-brand-neutral-900 dark:text-white mb-1 group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400 transition-colors">
-                      99.2%
+                    <div
+                      className={`text-2xl font-medium mb-1 transition-colors ${
+                        isAnonytoActive
+                          ? "text-brand-neutral-900 dark:text-white group-hover:text-brand-primary-600 dark:group-hover:text-brand-primary-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {isAnonytoActive ? "99.2%" : "0%"}
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
                       {t.hero.dashboard.accuracy}
                     </p>
                   </div>
                   <div className="text-center group cursor-default">
-                    <div className="text-2xl font-medium text-green-600 dark:text-green-400 mb-1 group-hover:scale-110 transition-transform">
+                    <div
+                      className={`text-2xl font-medium mb-1 group-hover:scale-110 transition-transform ${
+                        isAnonytoActive
+                          ? "text-green-600 dark:text-green-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
                       <AnimatedNumber
-                        end={0}
+                        end={isAnonytoActive ? 0 : 999}
                         suffix="ms"
-                        className="text-2xl font-medium text-green-600 dark:text-green-400"
+                        className={`text-2xl font-medium ${
+                          isAnonytoActive
+                            ? "text-green-600 dark:text-green-400"
+                            : "text-red-600 dark:text-red-400"
+                        }`}
                       />
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
@@ -216,8 +317,14 @@ export function HeroSection() {
                     </p>
                   </div>
                   <div className="text-center group cursor-default">
-                    <div className="text-2xl font-medium text-blue-600 dark:text-blue-400 mb-1 group-hover:scale-110 transition-transform">
-                      24/7
+                    <div
+                      className={`text-2xl font-medium mb-1 group-hover:scale-110 transition-transform ${
+                        isAnonytoActive
+                          ? "text-blue-600 dark:text-blue-400"
+                          : "text-red-600 dark:text-red-400"
+                      }`}
+                    >
+                      {isAnonytoActive ? "24/7" : "OFF"}
                     </div>
                     <p className="text-xs text-brand-neutral-500 dark:text-brand-neutral-400">
                       {t.hero.dashboard.active}
