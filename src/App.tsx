@@ -12,6 +12,7 @@ import { SecuritySection } from "./sections/SecuritySection";
 import { IntegrationsSection } from "./sections/IntegrationsSection";
 import { PricingSection } from "./sections/PricingSection";
 import { FAQSection } from "./sections/FAQSection";
+import { ContactSection } from "./sections/ContactSection";
 import { CTASection } from "./sections/CTASection";
 import { Footer } from "./sections/Footer";
 
@@ -105,6 +106,8 @@ function AppContent() {
         <PricingSection />
 
         <FAQSection />
+
+        <ContactSection />
 
         <CTASection />
 

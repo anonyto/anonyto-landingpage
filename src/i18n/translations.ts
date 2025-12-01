@@ -11,8 +11,7 @@ export const translations = {
       integrations: "Intégrations",
     },
     hero: {
-      title:
-        "Protégez vos données personnelles avant qu'elles ne sortent",
+      title: "Protégez vos données personnelles avant qu'elles ne sortent",
       subtitle: "La couche de sécurité dont vous avez besoin",
       desc: "Vous utilisez des outils IA comme ChatGPT et Copilot chaque jour, mais vous partagez parfois sans le savoir des informations personnelles. Anonyto détecte et anonymise automatiquement vos données sensibles avant qu'elles ne soient envoyées.",
       start: "Essayer gratuitement",
@@ -56,26 +55,27 @@ export const translations = {
       },
     },
     solution: {
-      title:
-        "Voici Anonyto, la protection dont vous avez besoin",
+      title: "Voici Anonyto, la protection dont vous avez besoin",
       subtitle:
         "Comme Grammarly corrige l'écriture, Anonyto protège votre vie privée.",
       intro:
         "Avant que tout texte ne soit envoyé à ChatGPT, Copilot, Gemini ou tout autre outil IA :",
       steps: {
         analyze: "Nous l'analysons en temps réel",
-        analyzeDesc: "Détection instantanée et analyse intelligente de vos données",
+        analyzeDesc:
+          "Détection instantanée et analyse intelligente de vos données",
         detect: "Nous détectons les informations personnelles sensibles",
         detectDesc:
           "Identification précise de vos informations personnelles et confidentielles",
         anonymize: "Nous l'anonymisons ou le masquons instantanément",
-        anonymizeDesc: "Protection automatique et masquage sécurisé de vos données",
+        anonymizeDesc:
+          "Protection automatique et masquage sécurisé de vos données",
         preserve:
           "Nous préservons le sens pour que votre travail reste rapide et fluide",
-        preserveDesc: "Conservation du contexte pour votre productivité maximale",
+        preserveDesc:
+          "Conservation du contexte pour votre productivité maximale",
       },
-      conclusion:
-        "Votre vie privée reste protégée, vous restez productif.",
+      conclusion: "Votre vie privée reste protégée, vous restez productif.",
     },
     howItWorks: {
       title: "Comment ça marche",
@@ -168,8 +168,7 @@ export const translations = {
         },
         {
           name: "Support réactif",
-          description:
-            "Notre équipe est là pour vous aider à tout moment",
+          description: "Notre équipe est là pour vous aider à tout moment",
         },
       ],
     },
@@ -280,10 +279,28 @@ export const translations = {
       badge: "Plus populaire",
       discount: "-40%",
       discountAnnual: "-66%",
+      free: {
+        name: "Essai",
+        price: "0$",
+        monthly: {
+          period: "/ mois",
+        },
+        annual: {
+          period: "/ an",
+        },
+        desc: "Pour commencer avec les bases",
+        cta: "Commencer gratuitement",
+        features: [
+          "Détection basique en temps réel",
+          "100 anonymisations / mois",
+          "Extension navigateur",
+          "Support communautaire",
+        ],
+      },
       starter: {
         name: "Mensuel",
-        price: "$12",
-        originalPrice: "$20",
+        price: "12$",
+        originalPrice: "20$",
         period: "/ mois",
         desc: "Pour les utilisateurs individuels",
         cta: "Rejoindre la liste d'attente",
@@ -297,14 +314,30 @@ export const translations = {
         ],
       },
       pro: {
-        name: "Annuel",
-        price: "$49",
-        originalPrice: "$144",
-        period: "/ an",
-        savings: "Économisez $95",
-        desc: "Pour les utilisateurs réguliers (4.08$/mois)",
+        name: "PRO",
+        monthly: {
+          price: "12$",
+          originalPrice: "20$",
+          period: "/ mois",
+          desc: "Pour les utilisateurs individuels",
+        },
+        annual: {
+          price: "49$",
+          originalPrice: "144$",
+          period: "/ an",
+          savings: "Économisez 95$",
+          desc: "Pour les utilisateurs réguliers (4.08$/mois)",
+        },
         cta: "Rejoindre la liste d'attente",
-        features: [
+        monthlyFeatures: [
+          "Détection en temps réel",
+          "Anonymisation illimitée",
+          "Extension navigateur",
+          "Détection avancée",
+          "Support prioritaire",
+          "Multi-appareils",
+        ],
+        annualFeatures: [
           "Tout du plan Mensuel",
           "2 mois gratuits",
           "Règles personnalisées avancées",
@@ -360,6 +393,26 @@ export const translations = {
         "Fait confiance par des équipes qui veulent une productivité rapide sans compromettre la sécurité",
       subtitle: "",
     },
+    contact: {
+      title: "Contactez-nous",
+      subtitle: "Nous sommes là pour répondre à toutes vos questions",
+      generalTab: "Questions générales",
+      generalTabShort: "Général",
+      enterpriseTab: "Solutions Entreprise",
+      enterpriseTabShort: "Entreprise",
+      emailLabel: "Email *",
+      emailPlaceholder: "votre@email.com",
+      nameLabel: "Nom *",
+      namePlaceholder: "Votre nom",
+      companyLabel: "Nom de l'entreprise *",
+      companyPlaceholder: "Votre entreprise",
+      titleLabel: "Sujet *",
+      titlePlaceholder: "De quoi s'agit-il ?",
+      descriptionLabel: "Message *",
+      descriptionPlaceholder: "Décrivez votre demande en détail...",
+      submit: "Envoyer",
+      sending: "Envoi en cours...",
+    },
     cta: {
       title: "Protégez votre vie privée sans ralentir votre productivité",
       subtitle:
@@ -368,8 +421,7 @@ export const translations = {
       contact: "En savoir plus",
     },
     footer: {
-      tagline:
-        "Protégez vos données personnelles avant qu'elles ne sortent",
+      tagline: "Protégez vos données personnelles avant qu'elles ne sortent",
       newsletter: "Restez informé",
       newsletterDesc:
         "Abonnez-vous pour les mises à jour produit, l'accès anticipé et les insights de sécurité.",
@@ -537,8 +589,7 @@ export const translations = {
         },
         {
           name: "Personal Dashboard",
-          description:
-            "Track your usage and view your data protection history",
+          description: "Track your usage and view your data protection history",
         },
         {
           name: "Multi-Device Protection",
@@ -552,8 +603,7 @@ export const translations = {
         },
         {
           name: "Privacy First",
-          description:
-            "Built with privacy at its core, GDPR compliant",
+          description: "Built with privacy at its core, GDPR compliant",
         },
         {
           name: "End-to-End Encryption",
@@ -566,15 +616,13 @@ export const translations = {
         },
         {
           name: "Responsive Support",
-          description:
-            "Our team is here to help you at any time",
+          description: "Our team is here to help you at any time",
         },
       ],
     },
     features: {
       title: "Who It's For",
-      subtitle:
-        "Thousands of users rely on Anonyto to stay productive safely",
+      subtitle: "Thousands of users rely on Anonyto to stay productive safely",
       ai: "Integrated AI",
       mobile: "Native mobile",
       realtime: "Real-time",
@@ -619,8 +667,7 @@ export const translations = {
         },
         {
           title: "Parents & Families",
-          description:
-            "Protect your family's information when using AI tools",
+          description: "Protect your family's information when using AI tools",
         },
       ],
     },
@@ -654,8 +701,7 @@ export const translations = {
         },
         {
           title: "Always Accessible",
-          description:
-            "Access your data wherever you are, anytime.",
+          description: "Access your data wherever you are, anytime.",
         },
       ],
       certificationBadge: "Certified and compliant with European standards",
@@ -676,10 +722,28 @@ export const translations = {
       badge: "Most Popular",
       discount: "-40%",
       discountAnnual: "-66%",
+      free: {
+        name: "Starter",
+        price: "0$",
+        monthly: {
+          period: "/ month",
+        },
+        annual: {
+          period: "/ year",
+        },
+        desc: "Get started with the basics",
+        cta: "Start Free",
+        features: [
+          "Basic real-time detection",
+          "100 anonymizations / month",
+          "Browser extension",
+          "Community support",
+        ],
+      },
       starter: {
         name: "Monthly",
-        price: "$12",
-        originalPrice: "$20",
+        price: "12$",
+        originalPrice: "20$",
         period: "/ month",
         desc: "For individual users",
         cta: "Join the Waitlist",
@@ -693,14 +757,30 @@ export const translations = {
         ],
       },
       pro: {
-        name: "Annual",
-        price: "$49",
-        originalPrice: "$144",
-        period: "/ year",
-        savings: "Save $95",
-        desc: "For regular users ($4.08/month)",
+        name: "PRO",
+        monthly: {
+          price: "12$",
+          originalPrice: "20$",
+          period: "/ month",
+          desc: "For individual users",
+        },
+        annual: {
+          price: "49$",
+          originalPrice: "144$",
+          period: "/ year",
+          savings: "Save 95$",
+          desc: "For regular users ($4.08/month)",
+        },
         cta: "Join the Waitlist",
-        features: [
+        monthlyFeatures: [
+          "Real-time detection",
+          "Unlimited anonymization",
+          "Browser extension",
+          "Advanced detection",
+          "Priority support",
+          "Multi-device",
+        ],
+        annualFeatures: [
           "Everything in Monthly",
           "2 months free",
           "Advanced custom rules",
@@ -755,6 +835,26 @@ export const translations = {
       title:
         "Trusted by teams that want fast productivity without compromising security",
       subtitle: "",
+    },
+    contact: {
+      title: "Contact Us",
+      subtitle: "We're here to answer all your questions",
+      generalTab: "General Questions",
+      generalTabShort: "General",
+      enterpriseTab: "Enterprise Solutions",
+      enterpriseTabShort: "Enterprise",
+      emailLabel: "Email *",
+      emailPlaceholder: "your@email.com",
+      nameLabel: "Name *",
+      namePlaceholder: "Your name",
+      companyLabel: "Company Name *",
+      companyPlaceholder: "Your company",
+      titleLabel: "Subject *",
+      titlePlaceholder: "What is this about?",
+      descriptionLabel: "Message *",
+      descriptionPlaceholder: "Describe your request in detail...",
+      submit: "Send",
+      sending: "Sending...",
     },
     cta: {
       title: "Protect Your Privacy Without Slowing Your Productivity Down",
