@@ -121,8 +121,10 @@ export function ContactSection() {
           : import.meta.env.VITE_EMAILJS_TEMPLATE_ID_GENERAL;
 
       const templateParams = {
+        email: formData.email,
         from_email: formData.email,
         title: formData.title,
+        message: formData.description,
         description: formData.description,
         form_type: formType,
         ...(formType === "general" && { name: formData.name }),
