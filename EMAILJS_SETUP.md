@@ -54,11 +54,23 @@
 
 5. **Update .env File**
    ```
-   VITE_EMAILJS_SERVICE_ID=your_service_id
-   VITE_EMAILJS_TEMPLATE_ID_ENTERPRISE=your_enterprise_template_id
-   VITE_EMAILJS_TEMPLATE_ID_GENERAL=your_general_template_id
    VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   
+   # General Questions Service
+   VITE_EMAILJS_SERVICE_ID_GENERAL=your_general_service_id
+   VITE_EMAILJS_TEMPLATE_ID_GENERAL=your_general_template_id
+   
+   # Enterprise Service
+   VITE_EMAILJS_SERVICE_ID_ENTERPRISE=your_enterprise_service_id
+   VITE_EMAILJS_TEMPLATE_ID_ENTERPRISE=your_enterprise_template_id
    ```
+
+6. **AWS Amplify Environment Variables**
+
+   For production deployment on AWS Amplify, add these environment variables:
+   - Go to AWS Amplify Console → Your App → Environment variables
+   - Add each variable from your `.env` file
+   - Redeploy the app
 
 ## Testing
 
