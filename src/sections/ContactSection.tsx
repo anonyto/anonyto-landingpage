@@ -128,7 +128,10 @@ export function ContactSection() {
         description: formData.description,
         form_type: formType,
         ...(formType === "general" && { name: formData.name }),
-        ...(formType === "enterprise" && { company: formData.company }),
+        ...(formType === "enterprise" && { 
+          name: formData.company,
+          company: formData.company 
+        }),
       };
 
       await emailjs.send(
