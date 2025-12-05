@@ -28,6 +28,7 @@ function AppContent() {
         "security",
         "integrations",
         "pricing",
+        "contact",
       ];
       const scrollPosition = window.scrollY + 100;
 

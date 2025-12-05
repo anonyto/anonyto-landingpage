@@ -40,13 +40,21 @@ export function Navbar({ activeSection }: NavbarProps) {
     >
       <div className="container-max px-4">
         <div className="flex justify-between items-center h-14 sm:h-16">
-          <div className="flex items-center">
+          <a
+            href="#hero"
+            aria-label="Go to Hero Section"
+            className="flex items-center focus:outline-none cursor-pointer"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = window.location.origin + window.location.pathname + "?refresh=" + Date.now() + "#hero";
+            }}
+          >
             <img
               src={theme === "dark" ? corezaLogos.dark : corezaLogos.light}
               alt="Anonyto Logo"
               className="h-8 sm:h-10 w-auto object-contain"
             />
-          </div>
+          </a>
 
           <div className="hidden lg:flex items-center space-x-8">
             <a
@@ -101,7 +109,11 @@ export function Navbar({ activeSection }: NavbarProps) {
             </a>
             <a
               href="#contact"
-              className="text-sm font-medium hover:text-brand-primary-600 dark:hover:text-brand-primary-400 transition-colors"
+              className={`text-sm font-medium transition-colors ${
+                activeSection === "contact"
+                  ? "text-brand-primary-600 dark:text-brand-primary-400"
+                  : "hover:text-brand-primary-600 dark:hover:text-brand-primary-400"
+              }`}
             >
               {t.nav.contact}
             </a>
@@ -302,7 +314,11 @@ export function Navbar({ activeSection }: NavbarProps) {
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="block text-sm font-medium hover:text-brand-primary-600 dark:hover:text-brand-primary-400 transition-colors"
+              className={`block text-sm font-medium transition-colors ${
+                activeSection === "contact"
+                  ? "text-brand-primary-600 dark:text-brand-primary-400"
+                  : "hover:text-brand-primary-600 dark:hover:text-brand-primary-400"
+              }`}
             >
               {t.nav.contact}
             </a>

@@ -18,7 +18,10 @@ export function HeroSection() {
   const [isAnonytoActive, setIsAnonytoActive] = useState(true);
 
   return (
-    <section className="relative pt-16 sm:pt-20 pb-8 sm:pb-12 min-h-screen flex items-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative pt-16 sm:pt-20 pb-8 sm:pb-12 min-h-screen flex items-center overflow-hidden"
+    >
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 -left-24 sm:-left-48 w-64 sm:w-96 h-64 sm:h-96 bg-brand-primary-500/20 dark:bg-brand-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 -right-24 sm:-right-48 w-64 sm:w-96 h-64 sm:h-96 bg-brand-secondary-500/20 dark:bg-brand-secondary-500/10 rounded-full blur-3xl animate-pulse animation-delay-1000"></div>
