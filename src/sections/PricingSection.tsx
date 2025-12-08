@@ -112,31 +112,29 @@ export function PricingSection() {
               <h3 className="text-3xl sm:text-4xl font-light text-white mb-4 tracking-wide">
                 {t.pricing.pro.name}
               </h3>
-              <div className="flex items-end gap-3 mb-2">
-                <div className="flex flex-col">
-                  <span className="text-lg sm:text-xl font-bold text-white/50 line-through leading-tight transition-all duration-300">
+              <div className="flex items-baseline gap-3 mb-2">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-5xl sm:text-6xl font-semibold text-white transition-all duration-300">
                     {isAnnual
-                      ? t.pricing.pro.annual.originalPrice
-                      : t.pricing.pro.monthly.originalPrice}
+                      ? t.pricing.pro.annual.price
+                      : t.pricing.pro.monthly.price}
                   </span>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-5xl sm:text-6xl font-semibold text-white transition-all duration-300">
-                      {isAnnual
-                        ? t.pricing.pro.annual.price
-                        : t.pricing.pro.monthly.price}
-                    </span>
-                    <span className="text-sm sm:text-base text-white/80 transition-all duration-300">
-                      {isAnnual
-                        ? t.pricing.pro.annual.period
-                        : t.pricing.pro.monthly.period}
-                    </span>
-                  </div>
-                </div>
-                <div className="mb-3">
-                  <span className="bg-green-500 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-lg transition-all duration-300">
-                    {isAnnual ? t.pricing.discountAnnual : t.pricing.discount}
+                  <span className="text-sm sm:text-base text-white/80 transition-all duration-300">
+                    {isAnnual
+                      ? t.pricing.pro.annual.period
+                      : t.pricing.pro.monthly.period}
                   </span>
                 </div>
+                <span className="bg-green-500 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-lg transition-all duration-300">
+                  {isAnnual ? t.pricing.discountAnnual : t.pricing.discount}
+                </span>
+              </div>
+              <div className="mb-2">
+                <span className="text-2xl sm:text-3xl font-bold text-white/50 line-through leading-tight transition-all duration-300">
+                  {isAnnual
+                    ? t.pricing.pro.annual.originalPrice
+                    : t.pricing.pro.monthly.originalPrice}
+                </span>
               </div>
               <p className="text-sm sm:text-base text-white/90 mb-4 transition-all duration-300">
                 {isAnnual
@@ -178,7 +176,7 @@ export function PricingSection() {
                 {t.pricing.enterprise.name}
               </h3>
               <div className="flex items-baseline gap-2 mb-3 sm:mb-4">
-                <span className="text-5xl sm:text-6xl font-semibold text-brand-neutral-900 dark:text-white">
+                <span className="text-5xl sm:text-6xl font-semibold text-brand-neutral-900 dark:text-white whitespace-nowrap">
                   {t.pricing.enterprise.price}
                 </span>
               </div>
