@@ -46,7 +46,12 @@ export function Navbar({ activeSection }: NavbarProps) {
             className="flex items-center focus:outline-none cursor-pointer"
             onClick={(e) => {
               e.preventDefault();
-              window.location.href = window.location.origin + window.location.pathname + "?refresh=" + Date.now() + "#hero";
+              window.location.href =
+                window.location.origin +
+                window.location.pathname +
+                "?refresh=" +
+                Date.now() +
+                "#hero";
             }}
           >
             <img
