@@ -4,6 +4,8 @@ import { useTheme } from "../context/ThemeContext";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import { corezaLogos } from "../assets/logos";
+import { VideoModal } from "../components/VideoModal";
+import demoVideo from "../assets/demo.mp4";
 
 interface NavbarProps {
   activeSection: string;
@@ -12,6 +14,7 @@ interface NavbarProps {
 export function Navbar({ activeSection }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const { theme, toggleTheme } = useTheme();
   const { language, setLanguage } = useLanguage();
@@ -235,14 +238,12 @@ export function Navbar({ activeSection }: NavbarProps) {
               </div>
             </div>
 
-            <a
-              href="https://join-anonyto.systeme.io/36805238"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setIsVideoModalOpen(true)}
               className="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-brand-primary-600 text-white hover:bg-brand-primary-700 h-10 px-3 sm:px-4 py-2 text-xs sm:text-sm"
             >
               {t.nav.demo}
-            </a>
+            </button>
           </div>
 
           <button
@@ -436,18 +437,24 @@ export function Navbar({ activeSection }: NavbarProps) {
                   </button>
                 </div>
               </div>
-              <a
-                href="https://join-anonyto.systeme.io/36805238"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => {
+                  setIsVideoModalOpen(true);
+                  setMobileMenuOpen(false);
+                }}
                 className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-brand-primary-600 text-white hover:bg-brand-primary-700 h-10 px-4 py-2 flex-1"
               >
                 {t.nav.demo}
-              </a>
+              </button>
             </div>
           </div>
         </div>
       )}
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoSrc={demoVideo}
+      />
     </nav>
   );
 }

@@ -10,6 +10,8 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
+import { VideoModal } from "../components/VideoModal";
+import demoVideo from "../assets/demo.mp4";
 
 export function HeroSection() {
   const { language } = useLanguage();
@@ -19,6 +21,7 @@ export function HeroSection() {
   const [commandText, setCommandText] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
 
   const [headlineText, setHeadlineText] = useState("");
   const [subheadlineText, setSubheadlineText] = useState("");
@@ -183,7 +186,7 @@ export function HeroSection() {
                         href="https://join-anonyto.systeme.io/36805238"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-primary-600 to-brand-primary-700 hover:from-brand-primary-700 hover:to-brand-primary-800 text-white text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-brand-primary-600/50 hover:scale-105 overflow-hidden whitespace-nowrap"
+                        className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-brand-primary-600 to-brand-primary-700 hover:from-brand-primary-700 hover:to-brand-primary-800 text-white text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-2xl hover:shadow-brand-primary-600/50 hover:scale-105 overflow-hidden whitespace-nowrap w-full sm:w-auto"
                       >
                         <span className="relative z-10">
                           {t.hero.newsletter.button}
@@ -192,19 +195,10 @@ export function HeroSection() {
                         <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                       </a>
                       <button
-                        onClick={() => {
-                          setHeadlineText("");
-                          setSubheadlineText("");
-                          setDescText("");
-                          setShowCursor(true);
-                          setCommandText("");
-                          setTerminalStep(0);
-                          setIsProcessing(false);
-                          setShowResults(false);
-                        }}
-                        className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-transparent border-2 border-brand-neutral-400 dark:border-brand-neutral-700 hover:border-brand-primary-500 text-brand-neutral-900 dark:text-white text-sm sm:text-base font-semibold rounded-lg sm:rounded-xl transition-all duration-300 hover:shadow-lg w-full sm:w-auto"
+                        onClick={() => setIsVideoModalOpen(true)}
+                        className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-transparent border-2 border-brand-neutral-400 dark:border-brand-neutral-700 hover:border-brand-primary-600 hover:bg-brand-primary-600/10 text-brand-neutral-900 dark:text-white hover:text-brand-primary-600 dark:hover:text-brand-primary-400 text-base font-semibold rounded-xl transition-all duration-300 hover:shadow-xl hover:shadow-brand-primary-600/30 hover:scale-105 overflow-hidden w-full sm:w-auto"
                       >
-                        <Play className="w-4 sm:w-5 h-4 sm:h-5 group-hover:scale-110 transition-transform" />
+                        <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
                         <span>{t.hero.terminal.replayButton}</span>
                       </button>
                     </div>
@@ -369,6 +363,11 @@ export function HeroSection() {
           </div>
         </div>
       </div>
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoSrc={demoVideo}
+      />
     </section>
   );
 }
