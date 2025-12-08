@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
+import { Facebook, Linkedin } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { translations } from "../i18n/translations";
 import { corezaLogos } from "../assets/logos";
@@ -24,28 +24,30 @@ export function Footer() {
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61584549838838"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-neutral-800 rounded-lg sm:rounded-xl flex items-center justify-center hover:bg-brand-primary-600 transition-colors"
               >
                 <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-neutral-800 rounded-lg sm:rounded-xl flex items-center justify-center hover:bg-brand-primary-600 transition-colors"
               >
-                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
+                <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/anonyto/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-neutral-800 rounded-lg sm:rounded-xl flex items-center justify-center hover:bg-brand-primary-600 transition-colors"
               >
                 <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-9 h-9 sm:w-10 sm:h-10 bg-brand-neutral-800 rounded-lg sm:rounded-xl flex items-center justify-center hover:bg-brand-primary-600 transition-colors"
-              >
-                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
           </div>
@@ -205,9 +207,14 @@ export function Footer() {
                 placeholder={t.footer.emailPlaceholder}
                 className="flex-1 px-3 sm:px-4 py-2.5 sm:py-3 bg-brand-neutral-800 border border-brand-neutral-700 rounded-lg sm:rounded-l-xl sm:rounded-r-none text-white placeholder-brand-neutral-400 focus:outline-none focus:ring-2 focus:ring-brand-primary-500 text-sm sm:text-base"
               />
-              <button className="px-4 sm:px-6 py-2.5 sm:py-3 bg-brand-primary-600 hover:bg-brand-primary-700 text-white rounded-lg sm:rounded-r-xl sm:rounded-l-none transition-colors text-sm sm:text-base whitespace-nowrap">
+              <a
+                href="https://join-anonyto.systeme.io/36805238"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 sm:px-6 py-2.5 sm:py-3 bg-brand-primary-600 hover:bg-brand-primary-700 text-white rounded-lg sm:rounded-r-xl sm:rounded-l-none transition-colors text-sm sm:text-base whitespace-nowrap inline-flex items-center justify-center"
+              >
                 {t.footer.subscribe}
-              </button>
+              </a>
             </div>
           </div>
         </div>
